@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Avinash Sharma - Personal Trainer</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Fitness Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Transform Your Fitness Journey</h1>
+            <p>Personalized training with Avinash Sharma, ACE Certified Trainer</p>
+            <a href="about.html" class="btn-primary">Learn More</a>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section class="about">
             <h2>About Me</h2>
-            <p>I am Avinash Sharma, a certified personal trainer from the American Council on Exercise since 2020. My mission is to help you achieve your fitness goals.</p>
+            <p>With over 5 years of experience, I have helped many clients achieve their fitness goals through personalized training programs. Whether you're looking to lose weight, gain muscle, or improve your overall health, I'm here to guide you.</p>
+            <a href="about.html" class="btn-secondary">Read More</a>
         </section>
 
-        <section>
+        <section class="blog">
             <h2>Latest Blog Posts</h2>
-            <p>Check out my latest articles on fitness, nutrition, and wellness!</p>
+            <div class="blog-posts">
+                <div class="post">
+                    <h3>How to Stay Consistent with Your Workouts</h3>
+                    <p>Consistency is key to seeing results. Discover simple tips to keep you motivated.</p>
+                    <a href="blog.html" class="btn-secondary">Read More</a>
+                </div>
+                <div class="post">
+                    <h3>Top 5 Nutritional Tips for Muscle Gain</h3>
+                    <p>Nutrition plays a huge role in building muscle. Learn how to optimize your diet.</p>
+                    <a href="blog.html" class="btn-secondary">Read More</a>
+                </div>
+            </div>
         </section>
     </main>
 
