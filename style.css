@@ -1,41 +1,154 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
+a {
     text-decoration: none;
+    color: inherit;
 }
 
-h1, h2 {
-    margin: 10px 0;
+h1, h2, h3 {
+    margin: 0 0 10px;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+p {
+    margin: 0 0 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 50px 0;
     text-align: center;
-    padding: 10px 0;
+}
+
+/* Hero Section */
+header.hero {
+    background-image: url('https://example.com/fitness-bg.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+header .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+header .btn-primary {
+    background-color: #ff6b6b;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: white;
+}
+
+header .btn-primary:hover {
+    background-color: #ff5252;
+}
+
+/* About Section */
+.about {
+    background-color: #f7f7f7;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about .btn-secondary {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.about .btn-secondary:hover {
+    background-color: #444;
+}
+
+/* Blog Section */
+.blog {
+    padding: 50px;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.blog .post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog .post h3 {
+    font-size: 1.8em;
+    color: #ff6b6b;
+}
+
+.blog .post p {
+    color: #777;
+}
+
+.blog .btn-secondary {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #ff6b6b;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.blog .btn-secondary:hover {
+    background-color: #ff5252;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
