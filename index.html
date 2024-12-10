@@ -1,45 +1,55 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFitGram</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <title>Avinash Sharma - Personal Trainer</title>
 </head>
 <body>
-
     <!-- Hero Section -->
     <header class="hero">
-        <div class="overlay">
-            <h1>Transform Your Fitness Journey</h1>
-            <p>Personalized training with Avinash Sharma, ACE Certified Trainer</p>
-            <a href="about.html" class="btn-primary">Learn More</a>
-        </div>
+        <div class="overlay"></div>
+        <h1>iFitGram</h1>
+        <p>Your Street Fitness Journey Begins Here</p>
+        <a href="#about" class="cta">Explore Now</a>
     </header>
 
-    <!-- Main Section -->
-    <main>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>With over 5 years of experience, I have helped many clients achieve their fitness goals through personalized training programs.</p>
-            <a href="about.html" class="btn-secondary">Read More</a>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>Avinash Sharma, ACE-certified personal trainer, helping people crush their fitness goals with a touch of urban flair.</p>
+    </section>
 
-        <!-- Bark Badge Section -->
-        <section class="bark-badge">
-            <h2>Check My Verified Profile</h2>
-            <!-- Bark Badge Code -->
-            <a href='https://www.bark.com/en/gb/company/avinash-sharma/gYNZP/' target='_blank' class='bark-widget' data-type='verified' data-id='gYNZP' data-image='medium-navy' data-version='3.0'>AVINASH SHARMA</a>
-            <script type='text/javascript' src='https://d3a1eo0ozlzntn.cloudfront.net/assets/js/frontend-v2/widgets-v2.24a197bed6.v2.js' defer></script>
-        </section>
-    </main>
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+        <h2>Latest Posts</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="blog1.jpg" alt="Blog 1">
+                <h3>Top 5 Street Workouts</h3>
+                <p>Learn how to master the streets with these powerful moves.</p>
+                <a href="blog1.html">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="blog2.jpg" alt="Blog 2">
+                <h3>Urban Diet Plans</h3>
+                <p>Stay fit while living fast in the city.</p>
+                <a href="blog2.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Let’s take your fitness to the next level.</p>
+        <a href="mailto:your-email@example.com" class="email-link">Email Me</a>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Avinash Sharma. All rights reserved.</p>
-        <p>Contact me: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <footer class="footer">
+        <p>© 2024 iFitGram. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
