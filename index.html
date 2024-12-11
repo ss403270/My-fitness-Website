@@ -3,56 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iFitGram - Your Personal Fitness Trainer</title>
+    <title>iFitGram</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">iFitGram</div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#blog">Blog</a></li>
+        <h1>iFitGram</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header id="hero" class="hero">
         <div class="overlay"></div>
-        <h1>Your Everyday Personal Trainer</h1>
-        <p>Transforming lives, one rep at a time.</p>
-        <a href="#services" class="cta">Explore Now</a>
+        <h1>iFitGram</h1>
+        <p>Your Everyday Personal Trainer</p>
+        <a href="#about" class="cta">Explore Now</a>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="section services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <img src="personal-training.jpg" alt="Personal Training">
-                <h3>Personal Training</h3>
-                <p>Customized workout plans tailored just for you.</p>
-            </div>
-            <div class="service-card">
-                <img src="online-coaching.jpg" alt="Online Coaching">
-                <h3>Online Coaching</h3>
-                <p>Train anytime, anywhere with our virtual programs.</p>
-            </div>
-            <div class="service-card">
-                <img src="nutrition.jpg" alt="Nutrition Guidance">
-                <h3>Nutrition Guidance</h3>
-                <p>Learn how to eat right for your fitness goals.</p>
-            </div>
-        </div>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p id="about-short">Being a child of a man who served in the military, it was always very active whenever my father...</p>
+        <p id="about-full" style="display: none;">
+            Being a child of a man who's served in the military, it was always very active whenever my father used to come home. He made us work out... [Full story continues here].
+        </p>
+        <button onclick="toggleAbout()">Read More</button>
     </section>
 
     <!-- Blog Section -->
     <section id="blog" class="section blog">
         <h2>Latest Posts</h2>
-        <div class="blog-cards">
+        <div class="blog-container">
             <div class="blog-card">
                 <img src="blog1.jpg" alt="Blog 1">
                 <h3>Top 5 Street Workouts</h3>
@@ -68,45 +60,28 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="section about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <p>
-                Being a child of a man who served in the military... 
-                <span id="more-about" style="display: none;">
-                    [Full story continues here...]
-                </span>
-                <button onclick="toggleAbout()">Read More</button>
-            </p>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <form action="mailto:ifitgram@yahoo.com" method="post" enctype="text/plain">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
-        <div class="social-icons">
-            <a href="https://instagram.com/ifitgram" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        <div class="badges">
+            <a href="https://www.bark.com/en/gb/company/avinash-sharma/gYNZP/" target="_blank">
+                <img src="bark-badge.png" alt="Bark Elite Pro">
+            </a>
+            <a href="https://www.insure4sport.co.uk/covertypes/ptandfitnessinstructor/ref=badge" target="_blank">
+                <img src="inside4sport-badge.png" alt="Insure4Sport Badge">
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <p>© 2024 iFitGram. All rights reserved.</p>
-        <div class="badges">
-            <a href="https://www.bark.com/en/gb/company/avinash-sharma/gYNZP/" target="_blank">
-                <img src="https://www.bark.com/assets/images/badge-medium-gold.png" alt="Bark Badge">
-            </a>
-            <a href="https://www.insure4sport.co.uk/covertypes/ptandfitnessinstructor/ref=badge" target="_blank">
-                <img src="https://www.insure4sport.co.uk/Content/images/badges/I4S_InsuredBadge_147x124.png" alt="Insure4Sport Badge">
-            </a>
-        </div>
     </footer>
 
     <script src="script.js"></script>
