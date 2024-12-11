@@ -1,10 +1,9 @@
 /* General Reset */
-body, h1, h2, p, a, ul, li, button {
+body, h1, h2, p, a, ul, li, button, form, input, textarea {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Navbar */
@@ -13,7 +12,7 @@ body, h1, h2, p, a, ul, li, button {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.8);
+    background: #333;
     color: white;
     position: sticky;
     top: 0;
@@ -21,41 +20,24 @@ body, h1, h2, p, a, ul, li, button {
 }
 
 .nav-links {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.nav-links.active {
     display: flex;
+    list-style: none;
 }
 
 .nav-links li {
-    margin: 0.5rem 0;
+    margin: 0 1rem;
 }
 
 .nav-links a {
     color: white;
+    text-decoration: none;
     font-weight: bold;
-}
-
-/* Hamburger Menu */
-.hamburger {
-    cursor: pointer;
-    font-size: 1.5rem;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('https://github.com/ss403270/My-fitness-Website/blob/main/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg?raw=true');
-    background-size: cover;
-    background-position: center;
     height: 100vh;
+    background: url('https://github.com/ss403270/My-fitness-Website/blob/main/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg?raw=true') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,55 +46,37 @@ body, h1, h2, p, a, ul, li, button {
     position: relative;
 }
 
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.hero h1 {
-    font-size: 3rem;
-    z-index: 1;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    z-index: 1;
-}
-
-.cta {
-    background-color: #f39c12;
-    padding: 0.75rem 1.5rem;
+.hero .cta {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #f39c12;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    z-index: 1;
 }
 
-/* Section Styling */
-.section {
+/* Services Section */
+.services {
     padding: 4rem 2rem;
+    text-align: center;
+    background: #f9f9f9;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-button {
-    background-color: #f39c12;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    cursor: pointer;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-    background-color: #d17b10;
-}
+/* Add similar styles for other sections... */
