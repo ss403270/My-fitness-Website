@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iFitGram - Your Modern Fitness Hub</title>
+    <title>iFitGram - Your Personal Fitness Trainer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">iFitGram</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
     <header class="hero">
-        <nav class="navbar">
-            <div class="logo">iFitGram</div>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Your Everyday Personal Trainer</h1>
-            <p>Transforming lives, one rep at a time.</p>
-            <a href="#services" class="cta">Get Started</a>
-        </div>
+        <div class="overlay"></div>
+        <h1>Your Everyday Personal Trainer</h1>
+        <p>Transforming lives, one rep at a time.</p>
+        <a href="#services" class="cta">Explore Now</a>
     </header>
 
     <!-- Services Section -->
@@ -48,21 +49,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="about-container">
-            <img src="about-image.jpg" alt="About Me">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>
-                    Being a child of a man who served in the military... 
-                    <span id="more-about" style="display: none;">[Full "About Me" story here.]</span>
-                    <button onclick="toggleAbout()">Read More</button>
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- Blog Section -->
     <section id="blog" class="section blog">
         <h2>Latest Posts</h2>
@@ -82,6 +68,20 @@
         </div>
     </section>
 
+    <!-- About Me Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>
+                Being a child of a man who served in the military... 
+                <span id="more-about" style="display: none;">
+                    [Full story continues here...]
+                </span>
+                <button onclick="toggleAbout()">Read More</button>
+            </p>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
@@ -91,12 +91,22 @@
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <p>Or reach out via <a href="https://instagram.com/ifitgram" target="_blank">Instagram</a>.</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/ifitgram" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <p>© 2024 iFitGram. All rights reserved.</p>
+        <div class="badges">
+            <a href="https://www.bark.com/en/gb/company/avinash-sharma/gYNZP/" target="_blank">
+                <img src="https://www.bark.com/assets/images/badge-medium-gold.png" alt="Bark Badge">
+            </a>
+            <a href="https://www.insure4sport.co.uk/covertypes/ptandfitnessinstructor/ref=badge" target="_blank">
+                <img src="https://www.insure4sport.co.uk/Content/images/badges/I4S_InsuredBadge_147x124.png" alt="Insure4Sport Badge">
+            </a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
