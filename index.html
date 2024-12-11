@@ -3,54 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avinash Sharma - Certified Personal Trainer</title>
+    <title>iFitGram</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Avinash Sharma</h1>
-            <p>Certified Personal Trainer | ACE Certified</p>
-        </header>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>iFitGram</h1>
+        <p>Your Street Fitness Journey Begins Here</p>
+        <a href="#about" class="cta">Explore Now</a>
+    </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>Avinash Sharma, ACE-certified personal trainer, helping people crush their fitness goals with a touch of urban flair.</p>
+    </section>
 
-        <section class="hero">
-            <h2>Street Style Fitness</h2>
-            <p>Your journey to becoming the best version of yourself starts here.</p>
-        </section>
-
-        <section class="badges">
-            <div class="badge">
-                <!-- Insure4Sport Badge -->
-                <a href="https://www.insure4sport.co.uk/covertypes/ptandfitnessinstructor/ref=badge" target="_blank">
-                    <img src="https://www.insure4sport.co.uk/Content/images/badges/I4S_InsuredBadge_147x124.png" 
-                         alt="Insure4Sport Personal Trainer Insurance" style="width: 150px;">
-                </a>
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+        <h2>Latest Posts</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="blog1.jpg" alt="Blog 1">
+                <h3>Top 5 Street Workouts</h3>
+                <p>Learn how to master the streets with these powerful moves.</p>
+                <a href="blog1.html">Read More</a>
             </div>
-            <div class="badge">
-                <!-- Bark Badge -->
-                <a href="https://www.bark.com/en/gb/company/avinash-sharma/gYNZP/" target="_blank" class="bark-widget" 
-                   data-type="verified" data-id="gYNZP" data-image="large-gold" data-version="3.0">
-                   AVINASH SHARMA
-                </a>
-                <script type="text/javascript" 
-                        src="https://www.bark.com/assets/js/frontend-v2/widgets-v2.24a197bed6.v2.js" 
-                        defer>
-                </script>
+            <div class="blog-card">
+                <img src="blog2.jpg" alt="Blog 2">
+                <h3>Urban Diet Plans</h3>
+                <p>Stay fit while living fast in the city.</p>
+                <a href="blog2.html">Read More</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <p>© 2024 Avinash Sharma. All Rights Reserved.</p>
-        </footer>
-    </div>
+    <!-- Badges Section -->
+    <section id="badges" class="section badges">
+        <h2>Credentials & Affiliations</h2>
+        <div class="badge-container">
+            <!-- Insure4Sport Badge -->
+            <a href="https://www.insure4sport.co.uk/covertypes/ptandfitnessinstructor/ref=badge" target="_blank">
+                <img src="https://www.insure4sport.co.uk/Content/images/badges/I4S_InsuredBadge_147x124.png" 
+                     alt="Insure4Sport Personal Trainer Insurance" style="width: 150px;">
+            </a>
+
+            <!-- Bark Elite Pro Badge -->
+            <a href="https://www.bark.com/en/gb/company/avinash-sharma/gYNZP/" target="_blank" 
+               class="bark-widget" data-type="verified" data-id="gYNZP" data-image="large-gold" data-version="3.0">
+               AVINASH SHARMA
+            </a>
+            <script type="text/javascript" 
+                    src="https://www.bark.com/assets/js/frontend-v2/widgets-v2.24a197bed6.v2.js" 
+                    defer>
+            </script>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Let’s take your fitness to the next level.</p>
+        <a href="mailto:ifitgram@gmail.com" class="email-link">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 iFitGram. All rights reserved.</p>
+    </footer>
 </body>
 </html>
