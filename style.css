@@ -207,3 +207,51 @@ body {
         font-size: 1.2rem;
     }
 }
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;  /* Set the height of the hero section */
+    background-image: url('https://github.com/ss403270/My-fitness-Website/blob/main/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg?raw=true'); /* Your background image URL */
+    background-size: cover;  /* Ensure the image covers the entire area */
+    background-position: center center;  /* Center the image */
+    color: white;  /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Dark overlay with opacity (0 to 1) */
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    z-index: 2;  /* Make sure the text is above the overlay */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    z-index: 2;  /* Make sure the text is above the overlay */
+}
+
+.hero .cta {
+    padding: 15px 30px;
+    background-color: #f04e23;  /* Customize the button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 2;  /* Ensure the button is above the overlay */
+}
