@@ -3,43 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iFitGram</title>
+    <title>iFitGram - Your Modern Fitness Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <div class="logo">iFitGram</div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
+    <!-- Header Section -->
     <header class="hero">
-        <div class="overlay"></div>
-        <h1>iFitGram</h1>
-        <p>Your Everyday Personal Trainer</p>
-        <a href="#about" class="cta">Explore Now</a>
+        <nav class="navbar">
+            <div class="logo">iFitGram</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Your Everyday Personal Trainer</h1>
+            <p>Transforming lives, one rep at a time.</p>
+            <a href="#services" class="cta">Get Started</a>
+        </div>
     </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="personal-training.jpg" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>Customized workout plans tailored just for you.</p>
+            </div>
+            <div class="service-card">
+                <img src="online-coaching.jpg" alt="Online Coaching">
+                <h3>Online Coaching</h3>
+                <p>Train anytime, anywhere with our virtual programs.</p>
+            </div>
+            <div class="service-card">
+                <img src="nutrition.jpg" alt="Nutrition Guidance">
+                <h3>Nutrition Guidance</h3>
+                <p>Learn how to eat right for your fitness goals.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
-        <h2>About Me</h2>
-        <p>
-            Being a child of a man who's served in the military, it was always very active whenever my father used to come home... 
-            <span id="more-about" style="display: none;">[Full content of "About Me" here.]</span>
-            <button onclick="toggleAbout()">Read More</button>
-        </p>
+        <div class="about-container">
+            <img src="about-image.jpg" alt="About Me">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Being a child of a man who served in the military... 
+                    <span id="more-about" style="display: none;">[Full "About Me" story here.]</span>
+                    <button onclick="toggleAbout()">Read More</button>
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Blog Section -->
     <section id="blog" class="section blog">
         <h2>Latest Posts</h2>
-        <div class="blog-container">
+        <div class="blog-cards">
             <div class="blog-card">
                 <img src="blog1.jpg" alt="Blog 1">
                 <h3>Top 5 Street Workouts</h3>
@@ -58,9 +85,13 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <p>Let’s take your fitness to the next level.</p>
-        <p>Email: <a href="mailto:ifitgram@yahoo.com">ifitgram@yahoo.com</a></p>
-        <p>Instagram: <a href="https://instagram.com/ifitgram" target="_blank">@ifitgram</a></p>
+        <form action="mailto:ifitgram@yahoo.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Or reach out via <a href="https://instagram.com/ifitgram" target="_blank">Instagram</a>.</p>
     </section>
 
     <!-- Footer -->
