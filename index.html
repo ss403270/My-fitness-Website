@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFitGram</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For the hamburger icon -->
 </head>
 <body>
     <!-- Hamburger Menu -->
-    <div class="hamburger-menu">
-        <i class="fas fa-bars" id="menu-icon"></i>
-        <div class="dropdown-menu" id="dropdown-menu">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </div>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span id="menu-icon">&#9776;</span>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div id="dropdown-menu" class="dropdown-menu">
+        <ul>
+            <li><a href="javascript:void(0)" onclick="showAboutMe()">About Me</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
     </div>
 
     <!-- Hero Section -->
@@ -27,6 +28,12 @@
         <p>Your Street Fitness Journey Begins Here</p>
         <a href="#about" class="cta">Explore Now</a>
     </header>
+
+    <!-- About Section (Initially Hidden) -->
+    <section id="about" class="section about" style="display: none;">
+        <h2>About Me</h2>
+        <p>Being a child of a man who's served in the military, it was always very active whenever my father used to come home... [Your story continues here]</p>
+    </section>
 
     <!-- Blog Section -->
     <section id="blog" class="section blog">
@@ -47,18 +54,6 @@
         </div>
     </section>
 
-    <!-- About Me Section (Initially Hidden) -->
-    <section id="about" class="section about">
-        <h2>About Me</h2>
-        <p>Hey, I’m Avinash Sharma, an ACE-certified personal trainer with a story that’ll make you believe in the power of hard work and transformation.</p>
-        <p>Growing up in a military household, I was always surrounded by discipline and physical activity. My father, who served in the military, made sure we stayed active. Whenever he came home, it wasn’t just family time—it was time for some good old-fashioned workouts! By the age of 12, I was learning Karate, and fitness was in my blood.</p>
-        <p>But, like many of us, life happened. Work pressure, studies, and the busy routine pushed me away from those early physical activities. Fast forward to when I was 17—I weighed 48kg, was underconfident, and couldn’t even hold a conversation without feeling anxious. College life didn’t help either. Big guys, big egos, and the constant fear of being judged. It was tough, and I hated every minute of it.</p>
-        <p>That’s when I made a life-changing decision. I walked into a gym and made a promise to myself: <em>No more excuses.</em> Waking up at 5 AM, hitting the gym while the world was still asleep, cooking my own meals, running to college, and juggling studies, it wasn’t easy. But I chose that hard path, and let me tell you, life rewards those who are disciplined.</p>
-        <p>By the time I was in college, people started noticing me. I wasn’t the skinny, shy guy anymore. I gained confidence in my skin, and even the girls started noticing. In fact, I had transformed into the best shape of my life, and that motivated me to help others do the same.</p>
-        <p>But here’s the thing—fitness isn’t just about looking good; it’s about feeling good. It’s about confidence inside and out, long-term health, and yes, wealth. After working in the hospitality industry with one of the best chains in the world, I realized that it wasn’t the career for me. Something was missing—the <em>kick</em>. That’s when I decided to pursue my passion for fitness, got my ACE certification, and here I am today, committed to helping you become the best version of yourself.</p>
-        <p>Fitness isn’t just a workout. It’s a lifestyle. It’s a journey. And I’ll be with you every step of the way. Together, let’s make you stronger, healthier, and more confident—because you deserve it!</p>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
@@ -72,12 +67,18 @@
     </footer>
 
     <script>
-        const menuIcon = document.getElementById("menu-icon");
-        const dropdownMenu = document.getElementById("dropdown-menu");
+        // Toggle dropdown menu visibility
+        function toggleMenu() {
+            const menu = document.getElementById('dropdown-menu');
+            menu.classList.toggle('active');
+        }
 
-        menuIcon.addEventListener("click", function() {
-            dropdownMenu.classList.toggle("active");
-        });
+        // Show the "About Me" section
+        function showAboutMe() {
+            const aboutSection = document.getElementById('about');
+            aboutSection.style.display = 'block';  // Show the About Me section
+            window.scrollTo(0, aboutSection.offsetTop);  // Scroll to the About Me section
+        }
     </script>
 </body>
 </html>
