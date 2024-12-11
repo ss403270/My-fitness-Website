@@ -1,18 +1,18 @@
-// Toggle the hamburger menu
+// Toggle hamburger menu
 function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
 }
 
-// Toggle the "About Me" full content
+// Toggle About Me section
 function toggleAbout() {
-    const moreContent = document.getElementById('more-about');
-    const button = document.querySelector('#about button');
-    if (moreContent.style.display === 'none') {
-        moreContent.style.display = 'inline';
-        button.textContent = 'Read Less';
+    const aboutShort = document.getElementById('about-short');
+    const aboutFull = document.getElementById('about-full');
+    if (aboutFull.style.display === 'none') {
+        aboutShort.style.display = 'none';
+        aboutFull.style.display = 'block';
     } else {
-        moreContent.style.display = 'none';
-        button.textContent = 'Read More';
+        aboutShort.style.display = 'block';
+        aboutFull.style.display = 'none';
     }
 }
