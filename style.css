@@ -103,6 +103,15 @@ body {
 /* Footer */
 .footer {
     text-align: center;
+    footer {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px;
+    text-align: center;
+}
+
+footer img {
+    margin: 10px;
+}
     padding: 10px;
     background: #101010;
     font-size: 0.9rem;
