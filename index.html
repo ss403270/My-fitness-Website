@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFitGram</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For the hamburger icon -->
 </head>
 <body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <header class="hero">
         <div class="overlay"></div>
@@ -14,15 +27,6 @@
         <p>Your Street Fitness Journey Begins Here</p>
         <a href="#about" class="cta">Explore Now</a>
     </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
 
     <!-- Blog Section -->
     <section id="blog" class="section blog">
@@ -43,7 +47,7 @@
         </div>
     </section>
 
-    <!-- About Me Section (Hidden by Default) -->
+    <!-- About Me Section (Initially Hidden) -->
     <section id="about" class="section about">
         <h2>About Me</h2>
         <p>Hey, I’m Avinash Sharma, an ACE-certified personal trainer with a story that’ll make you believe in the power of hard work and transformation.</p>
@@ -62,24 +66,18 @@
         <a href="mailto:ifitgram@yahoo.com" class="email-link">Email Me</a>
     </section>
 
-    <!-- Badges Section -->
-    <section id="badges" class="section badges">
-        <h2>Certified & Insured</h2>
-        <!-- Insure4Sport Badge -->
-        <a href='https://www.insure4sport.co.uk/covertypes/ptandfitnessinstructor/ref=badge'>
-            <img src="https://www.insure4sport.co.uk/Content/images/badges/I4S_InsuredBadge_147x124.png" alt="Insure4Sport Personal Trainer Insurance">
-        </a>
-
-        <!-- Bark Badge -->
-        <a href='https://www.bark.com/en/gb/company/avinash-sharma/gYNZP/' target='_blank' class='bark-widget' data-type='pro' data-id='gYNZP' data-image='medium-gold' data-version='3.0'>
-            AVINASH SHARMA
-        </a>
-        <script type='text/javascript' src='https://www.bark.com/assets/js/frontend-v2/widgets-v2.24a197bed6.v2.js' defer></script>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <p>© 2024 iFitGram. All rights reserved.</p>
     </footer>
+
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        menuIcon.addEventListener("click", function() {
+            dropdownMenu.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
